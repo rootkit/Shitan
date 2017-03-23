@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlaceViewController">
+            <connections>
+                <outlet property="searchDisplayController" destination="e5I-VR-sWb" id="GPo-01-dh8"/>
+                <outlet property="tableview" destination="8bx-a0-Efe" id="g6b-BV-iLj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="CellIdentifier" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="8bx-a0-Efe">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="q57-gg-nkQ"/>
+                        <outlet property="delegate" destination="-1" id="3DB-Vb-MBG"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <searchDisplayController id="e5I-VR-sWb">
+            <connections>
+                <outlet property="delegate" destination="-1" id="A86-zq-JBt"/>
+                <outlet property="searchContentsController" destination="-1" id="OWt-Qt-Hy0"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="ixL-D4-Sg1"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="wcx-Gf-N8L"/>
+            </connections>
+        </searchDisplayController>
+        <searchBar contentMode="redraw" id="kjB-hr-cLR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <textInputTraits key="textInputTraits"/>
+        </searchBar>
+    </objects>
+</document>

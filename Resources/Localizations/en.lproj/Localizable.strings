@@ -1,0 +1,266 @@
+/* 
+   Localizable.strings
+   Artery
+
+   Created by 刘敏 on 14-9-15.
+   Copyright (c) 2014年 深圳食探网络科技有限公司. All rights reserved.
+*/
+
+
+// iBoxPay App Delegate 
+
+"app_alert_title"			= "您还没有登录";
+"app_alert_message"			= "请先登录再进行操作";
+"app_alert_but_1"			= "登录";
+
+// Main View Controller
+
+"tab_home"                      = "首页";
+
+"m_title_QRPOS"					= "QRPOS";
+"m_title_Gas"					= "燃气费缴纳";
+"m_title_Elec"					= "电费缴纳";
+"m_title_Water"					= "水费缴纳";
+"m_title_Transfer"				= "即时转账";
+"m_title_CreditPay"				= "信用卡还款";
+"m_title_Phone"					= "手机充值";
+"m_title_Balance"				= "余额查询";
+"m_title_Broadband"             = "固话/宽带";
+"m_title_Purchase"              = "申购盒子";
+"m_title_Lottery"               = "彩票";
+"m_title_Movie"                 = "电影票";
+"m_title_QQRecharge"            = "QQ充值";
+
+
+
+//"m_title_18"					= "影视票务";
+//"m_title_19"                 = "欢乐彩票";
+//"m_title_17"                = "机票预订";
+
+// Phone Expenses View Controller
+
+
+// Phone Exp Confirm View Controller
+"pec_title"					= "充值确认";
+
+//QRpos history
+"QR_history_title"          = "历史记录";
+//QRpos Info Confirm
+"QR_Info_title"             = "订单信息";
+//QRpos history detail
+"QR_history_detail_title"   = "订单详情";
+
+// Credit Card Pay View Controller
+
+
+// Credit Confirmation View Controller
+"cc_title"					= "还款确认";
+"btc_title"                 = "转账确认";
+
+// Bank View Controller
+"c_b_title"					= "信用卡发卡行";
+
+// Card History View Controller
+"c_c_h_title"				= "我的信用卡";
+
+// BXPTransfer History View Controller
+"c_c_T_title"               = "历史记录";
+
+// Water Confirm View Controller
+"wc_title"					= "水费缴纳单";
+
+// Electricity Confirm View Controller
+"ec_title"					= "电费缴纳单";
+
+// Gas Confirm View Controller
+"gc_title"					= "燃气费缴纳单";
+
+// Broadband Confirm View Controller
+"brd_title"                 = "宽带/固话缴纳单";
+
+// Province View Controller
+"con_province_title"		= "省份选择";
+
+// Merchant View Controller
+"Merch_title"               = "订单确认";
+
+// Payment View Controller
+"p_title"					= "确认支付";
+
+// Records View Controller
+"tab_bill"					= "交易记录";
+"r_top_seg_title_1"			= "成功交易";
+"r_top_seg_title_2"			= "失败交易";
+
+// Records Detail View Controller
+"rd_title"					= "交易详情";
+"rd_table_title"			= "交易信息";
+"rd_table_detail"			= "订单信息";
+
+
+// Message View Controller
+"tab_message"				= "消息";
+
+// Message Detail View Controller
+"md_title"					= "消息详情";
+"md_top_right_title"		= "清除";
+
+ 
+// Account View Controller  
+"tab_account"				= "账户管理";
+"tab_login"					= "登录*注册";
+
+"a_top_right_title"			= "注销";
+"a_but_edit_title"			= "编辑";
+"a_cell2_title"				= "更改密码";
+"a_but_bind_title"          = "解绑";
+
+
+// Account Manager View Controller
+"am_title"					= "个人资料";
+"am_top_right_title"		= "保存";
+"change_phone_title"        = "修改手机号码";
+"bind_box_title"            = "设备管理";
+"unbind_box_title"          = "设备解绑";
+
+
+// Update Passord View Controller
+"up_title"					= "更改登录密码";
+"up_but_done"				= "确定";
+
+// More ViewController
+"tab_more"					= "更多";
+
+"m_cell_1"					= "服务协议";
+"m_cell_2"					= "常用帮助";
+"m_cell_3"					= "新手引导";
+"m_cell_4"					= "推荐分享";
+"m_cell_5"					= "关于软件";
+"m_cell_6"                  = "提建议";
+"m_cell_7"                  = "申购设备";
+"m_cell_8"                  = "给我评分";
+
+///////////////////////////////////////////////////////////
+//    Login Module
+// Login View Controller 
+"l_title"					= "用户登录";
+"l_top_but_left"			= "取消";
+"l_photoviewer_but_left"	= "返回";
+
+// Get Back Password View Controller
+"gbp_title"					= "密码重置";
+
+
+// Register View Controller
+"r_title"					= "注册";
+
+
+// BXPWebViewController
+"r_p_title"					= "服务协议";
+"r_inst_title"				= "还款说明";
+"r_help_title"              = "常用帮助";
+"r_carduse_title"           = "信用卡使用说明";
+"r_transfer_title"          = "即时转账使用说明";
+
+
+
+// BindingCard View Controller
+
+"bind_title"                = "银行卡管理";
+"bind_table_title"          = "已绑定银行卡";
+"bind_table_detail"         = "解绑中银行卡";
+
+// Features View Controller
+"r_fea_title"				= "功能介绍";
+
+/***************************************************************/
+//			Units.h
+
+"alert_but_ok"				= "确定";
+"alert_but_cancel"			= "取消";
+
+// 本地化客户端提示语
+
+//软件版本
+"alert_title_version"       = "您使用的版本为最新版本";
+"alert_title_version2"      = "已发布新版本软件";
+"alert_button_version"      = "立即更新";
+"alert_button_save"         = "保存成功";
+//相机
+"alert_title_camera"        = "您的设备不支持拍照功能";
+"alert_title_message"       = "该设备不支持短信功能";
+"alert_title_email"         = "该设备未配置邮箱,请先配置邮箱再进行操作";
+"alert_title_server"        = "网络连接异常,请稍后再试";
+
+"alert_title_card"          = "解绑银行卡需要3天生效，期间将不能使用该卡支付iBOXPAY的订单";
+"alert_content_card"        = "解绑银行卡将在3天后生效";
+"alett_title_card2"         = "该银行卡未绑定,请先绑定该银行卡";
+"alert_title_card3"         = "该银行卡处于解绑状态,暂不可用";
+
+//设备认证
+"alert_title_login"         = "登录状态超时,请重新登录";
+"alert_title_bindBox"       = "是否绑定设备";
+"alert_message_bindBox"     = "设备需绑定后方可使用";
+"alert_title_bindBox2"      = "设备无法绑定";
+"alert_title_unbindBox"     = "设备解绑成功";
+"alert_content_bindBox"     = "该设备已绑定其它账号，请先解绑";
+"alert_content_bindBox2"    = "该账号已绑定其它设备，请先解绑";
+
+"alert_title_creditCard"    = "是否保存信用卡卡号";
+"alert_title_creditCard2"   = "信用卡号长度错误,请重新输入";
+
+"alert_title_transferCard"  = "是否保存卡号";
+"alert_title_transferCard2" = "卡号长度错误,请重新输入";
+
+"alert_title_checkBox"      = "未检测到可用设备,请先插入设备";
+"alert_title_Nologin"       = "您的设备未通过认证,请先认证设备";
+
+"alert_title_connectserver" = "正在向服务器发送请求";
+"alert_title_customer"      = "如有疑惑,请联系客服";
+"alert_title_money"         = "金额输入错误";
+"alert_title_money2"        = "缴费金额不能小于欠费金额";    
+"alert_title_money3"        = "金额数目过大";
+
+"alert_title_phone"         = "手机号码输入错误,请重新输入";
+"alert_title_phone2"        = "手机号码修改成功";
+"alert_title_account"       = "邮箱输入错误,请输入有效的邮箱地址";
+
+"alert_title_password"      = "请输入6-20位的英文字母或数字";
+"alert_title_password2"     = "两次输入密码不一致，请重新输入";
+"alert_title_password3"     = "密码已重置,请重新登录";
+"alert_title_password4"     = "密码修改成功,请重新登录";
+"alert_title_password5"     = "密码修改失败";
+"alert_title_password6"     = "新密码不能与旧密码相同";
+"alert_title_password7"     = "两次密码输入不一致";
+
+"alert_title_usercode"      = "验证码输入错误,请重新输入验证码";
+"alert_title_usercode2"     = "验证码已发送,请查看手机短信";
+"alert_title_usercode3"     = "验证码发送失败,请重新获取验证码";
+
+"alert_title_box"           = "请重试";
+"alert_title_box3"          = "设备已拔出";
+"alert_title_box4"          = "设备信息读取失败";
+"alert_title_box5"          = "设备未进入读卡状态,请重新操作";
+"alert_title_box6"          = "设备已拔出,请先插入设备再继续使用";
+"alert_title_box7"          = "设备无法识别";
+
+"alert_title_record"        = "已经是第一个记录了";
+"alert_title_record2"       = "已经是最后一个记录了";
+"alert_title_record3"       = "查询失败,请重新查询";
+
+"alert_title_ID"            = "身份证号长度错误,请重新输入";
+"alert_title_ID2"           = "身份证号格式错误,请重新输入";
+"alert_title_ID3"           = "身份证号长度超过18位,请勿再输入";
+
+"m_contact"                 = "通讯录";
+
+
+
+
+
+
+
+
+
+
+

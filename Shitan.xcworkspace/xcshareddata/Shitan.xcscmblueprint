@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "57e2bbfb-28f6-4736-b544-381e659ffcf6++4389",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "57e2bbfb-28f6-4736-b544-381e659ffcf6++4389" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "57e2bbfb-28f6-4736-b544-381e659ffcf6++4389" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "627AFE86-82A3-4E98-956E-25C8460DA6B8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "57e2bbfb-28f6-4736-b544-381e659ffcf6++4389" : "%E9%A3%9F%E6%8E%A2"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Shitan",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Shitan.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/www.svnchina.com\/svn\/ishare_ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "57e2bbfb-28f6-4736-b544-381e659ffcf6++4389"
+    }
+  ]
+}

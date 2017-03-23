@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FavCollectionCell" id="b13-Mf-GkU" customClass="FavCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="142" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="142" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V6H-lB-V7Q">
+                        <rect key="frame" x="4" y="4" width="134" height="134"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="134" id="ldE-jT-C2U"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fiD-ur-V6Q" userLabel="图片1">
+                        <rect key="frame" x="4" y="142" width="42" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="7Xk-SM-Ovl"/>
+                            <constraint firstAttribute="height" constant="42" id="JTI-cc-EIX"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yy9-ds-3Zj" userLabel="图片2">
+                        <rect key="frame" x="50" y="142" width="42" height="42"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wY7-H5-Dg5" userLabel="图片3">
+                        <rect key="frame" x="96" y="142" width="42" height="42"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tbL-tB-aMR">
+                        <rect key="frame" x="4" y="188" width="134" height="28"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是我想去的地方" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZE0-2m-k7i">
+                                <rect key="frame" x="0.0" y="4" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZE0-2m-k7i" firstAttribute="leading" secondItem="tbL-tB-aMR" secondAttribute="leading" id="0aZ-Mk-ZUb"/>
+                            <constraint firstItem="ZE0-2m-k7i" firstAttribute="top" secondItem="tbL-tB-aMR" secondAttribute="top" constant="4" id="0qo-cM-ZOY"/>
+                            <constraint firstAttribute="trailing" secondItem="ZE0-2m-k7i" secondAttribute="trailing" id="p81-Dc-JHx"/>
+                            <constraint firstAttribute="bottom" secondItem="ZE0-2m-k7i" secondAttribute="bottom" constant="3" id="vYC-k2-jgc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wY7-H5-Dg5" firstAttribute="height" secondItem="yy9-ds-3Zj" secondAttribute="height" id="1c6-ZJ-TPo"/>
+                <constraint firstItem="V6H-lB-V7Q" firstAttribute="top" secondItem="b13-Mf-GkU" secondAttribute="top" constant="4" id="34X-zZ-EaE"/>
+                <constraint firstItem="wY7-H5-Dg5" firstAttribute="width" secondItem="yy9-ds-3Zj" secondAttribute="width" id="4Dq-VJ-ZAB"/>
+                <constraint firstItem="yy9-ds-3Zj" firstAttribute="top" secondItem="V6H-lB-V7Q" secondAttribute="bottom" constant="4" id="L1s-Op-VuD"/>
+                <constraint firstItem="yy9-ds-3Zj" firstAttribute="top" secondItem="fiD-ur-V6Q" secondAttribute="top" id="MWT-aU-6Og"/>
+                <constraint firstItem="yy9-ds-3Zj" firstAttribute="centerX" secondItem="tbL-tB-aMR" secondAttribute="centerX" id="RpM-On-UXB"/>
+                <constraint firstItem="yy9-ds-3Zj" firstAttribute="centerX" secondItem="V6H-lB-V7Q" secondAttribute="centerX" id="S4M-US-p7v"/>
+                <constraint firstItem="wY7-H5-Dg5" firstAttribute="height" secondItem="fiD-ur-V6Q" secondAttribute="height" id="UUV-Q3-9i6"/>
+                <constraint firstItem="V6H-lB-V7Q" firstAttribute="leading" secondItem="b13-Mf-GkU" secondAttribute="leading" constant="4" id="aGd-fd-teM"/>
+                <constraint firstItem="yy9-ds-3Zj" firstAttribute="leading" secondItem="fiD-ur-V6Q" secondAttribute="trailing" constant="4" id="eDa-7O-gmz"/>
+                <constraint firstAttribute="trailing" secondItem="V6H-lB-V7Q" secondAttribute="trailing" constant="4" id="kSz-AV-6eN"/>
+                <constraint firstAttribute="trailing" secondItem="tbL-tB-aMR" secondAttribute="trailing" constant="4" id="oGh-vC-Vt4"/>
+                <constraint firstItem="tbL-tB-aMR" firstAttribute="top" secondItem="yy9-ds-3Zj" secondAttribute="bottom" constant="4" id="s5j-PQ-bVc"/>
+                <constraint firstItem="wY7-H5-Dg5" firstAttribute="leading" secondItem="yy9-ds-3Zj" secondAttribute="trailing" constant="4" id="tFY-yS-mH5"/>
+                <constraint firstItem="yy9-ds-3Zj" firstAttribute="top" secondItem="wY7-H5-Dg5" secondAttribute="top" id="uQG-GH-Ixl"/>
+                <constraint firstItem="wY7-H5-Dg5" firstAttribute="width" secondItem="fiD-ur-V6Q" secondAttribute="width" id="uhH-Gc-deS"/>
+                <constraint firstItem="tbL-tB-aMR" firstAttribute="leading" secondItem="b13-Mf-GkU" secondAttribute="leading" constant="4" id="x17-DV-Py9"/>
+                <constraint firstAttribute="bottom" secondItem="tbL-tB-aMR" secondAttribute="bottom" constant="4" id="yMy-qf-RYe"/>
+            </constraints>
+            <size key="customSize" width="347" height="50"/>
+            <connections>
+                <outlet property="favoritePic1" destination="V6H-lB-V7Q" id="Ib2-z4-L7b"/>
+                <outlet property="favoritePic2" destination="fiD-ur-V6Q" id="e1n-sW-Imh"/>
+                <outlet property="favoritePic3" destination="yy9-ds-3Zj" id="6tL-E6-oGF"/>
+                <outlet property="favoritePic4" destination="wY7-H5-Dg5" id="bEH-Nd-rzK"/>
+                <outlet property="favoriteTitleLabel" destination="ZE0-2m-k7i" id="mDG-kK-Div"/>
+                <outlet property="largerIamgeWidth" destination="ldE-jT-C2U" id="Ax1-nF-CRc"/>
+                <outlet property="smallIMageHigth" destination="JTI-cc-EIX" id="zJo-cm-aox"/>
+                <outlet property="smallIMageWidth" destination="7Xk-SM-Ovl" id="CmW-QG-2eh"/>
+            </connections>
+            <point key="canvasLocation" x="217" y="412"/>
+        </collectionViewCell>
+    </objects>
+</document>

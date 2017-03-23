@@ -1,0 +1,47 @@
+//
+//  PrefixHeader.pch
+//  Shitan
+//
+//  Created by Richard Liu 15/6/29.
+//  Copyright (c) 2015年 深圳食探网络科技有限公司. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "CommonMacro.h"
+#import "URLsAndGlobalKeys.h"
+#import "UIBarButtonItem+CustomStyle.h"
+#import "UIButton+BGImage.h"
+#import "Units.h"
+#import "AppDelegate.h"
+#import "AccountInfo.h"
+#import "STChildViewController.h"
+#import "STLoginViewController.h"
+#import "ResetFrame.h"
+#import "STJSONSerialization.h"
+#import "NewsMessageManager.h"
+#import "NSDictionary+Utility.h"
+#import "MobClick.h"
+#import "StoryBoardUtilities.h"
+#import "UIColor+Extension.h"
+#import "NSDictionary+Conventional.h"
+#import "STNavigationController.h"
+
+
+#ifdef DEBUG
+
+#define CLog(...)  NSLog(__VA_ARGS__)
+
+#else
+
+#define CLog(...)
+
+#endif
+
+#endif

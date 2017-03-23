@@ -1,0 +1,210 @@
+//
+//  AccountDAO.h
+//  Shitan
+//
+//  Created by 刘敏 on 14-9-17.
+//  Copyright (c) 2014年 深圳食探网络科技有限公司. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "AccountInfo.h"
+
+typedef void (^AccountDAOBlock)(NSDictionary *result);
+
+
+@interface AccountDAO : NSObject
+
+
+/******************************************* 注册  *******************************************/
+/**
+ *  获取注册验证码
+ *  请求方式 GET
+ *
+ *  @param dict
+ */
+- (void)requestVerificationCode:(NSDictionary *)dict
+                completionBlock:(AccountDAOBlock)completionBlock
+                 setFailedBlock:(AccountDAOBlock)failedBlock;
+
+
+
+/**
+ *  验证验证码的正确性
+ *  请求方式 POST
+ *
+ *  @param dict
+ *  @param completionBlock
+ *  @param failedBlock
+ */
+- (void)requestCheckverificationCode:(NSDictionary *)dict
+                     completionBlock:(AccountDAOBlock)completionBlock
+                      setFailedBlock:(AccountDAOBlock)failedBlock;
+
+
+
+/**
+ *  验证手机号码是否被注册
+ *  请求方式 GET
+ *  @param dict
+ *  @param completionBlock
+ *  @param failedBlock
+ */
+- (void)requestMobileIsRegister:(NSDictionary *)dict
+               completionBlock:(AccountDAOBlock)completionBlock
+                setFailedBlock:(AccountDAOBlock)failedBlock;
+
+
+
+/**
+ *  手机注册
+ *  请求方式 POST
+ *
+ *  @param dict
+ */
+- (void)requestMobleRegister:(NSDictionary *)dict
+             completionBlock:(AccountDAOBlock)completionBlock
+              setFailedBlock:(AccountDAOBlock)failedBlock;
+
+
+/**
+ *  绑定手机
+ *  请求方式 POST
+ 
+ *  @param dict
+ *  @param completionBlock
+ *  @param failedBlock
+ */
+- (void)requestBindMobile:(NSDictionary *)dict
+          completionBlock:(AccountDAOBlock)completionBlock
+           setFailedBlock:(AccountDAOBlock)failedBlock;
+
+
+
+/******************************************* 登录  *******************************************/
+
+
+/**
+ *  手机号码登录
+ *  请求方式 POST
+ *
+ *  @param loginTyp 登录方式
+ */
+- (void)requestMobleLogin:(NSDictionary *)dict;
+
+
+
+/**
+ *  微信登录
+ *  请求方式 POST
+ *
+ *  @param dict
+ */
+- (void)requestWechatLogin:(NSDictionary *)dict;
+
+
+
+/******************************************* 更新个人信息  *******************************************/
+/**
+ *  更新User信息
+ *  请求方式 POST
+ *
+ *  @param dict
+ */
+- (void)requestUserUpdate:(NSDictionary *)dict
+          completionBlock:(AccountDAOBlock)completionBlock
+           setFailedBlock:(AccountDAOBlock)failedBlock;
+
+
+/**
+ *  用户搜索（通过昵称、手机号码）
+ *  请求方式 GET
+ *
+ *  @param dict
+ *  @param completionBlock
+ *  @param failedBlock
+ */
+- (void)requestUserwithSearch:(NSDictionary *)dict
+              completionBlock:(AccountDAOBlock)completionBlock
+               setFailedBlock:(AccountDAOBlock)failedBlock;
+
+
+
+/**
+ *  绑定微博账户
+ *  POST
+ *
+ *  @param dict
+ *  @param completionBlock
+ *  @param failedBlock
+ */
+- (void)requestBindWeibo:(NSDictionary *)dict
+         completionBlock:(AccountDAOBlock)completionBlock
+          setFailedBlock:(AccountDAOBlock)failedBlock;
+
+
+
+/**
+ *  绑定QQ
+ *  POST
+ *
+ *  @param dict
+ *  @param completionBlock
+ *  @param failedBlock
+ */
+- (void)requestBindQQ:(NSDictionary *)dict
+      completionBlock:(AccountDAOBlock)completionBlock
+       setFailedBlock:(AccountDAOBlock)failedBlock;
+
+
+
+
+/**
+ *  绑定微信
+ *  POST
+ *
+ *  @param dict
+ *  @param completionBlock
+ *  @param failedBlock
+ */
+- (void)requestBindWeiChat:(NSDictionary *)dict
+           completionBlock:(AccountDAOBlock)completionBlock
+            setFailedBlock:(AccountDAOBlock)failedBlock;
+
+
+/**
+ *  重置密码（手机登录）
+ *  POST
+ *
+ *  @param dict
+ *  @param completionBlock
+ *  @param failedBlock
+ */
+- (void)requestRestPassword:(NSDictionary *)dict
+            completionBlock:(AccountDAOBlock)completionBlock
+             setFailedBlock:(AccountDAOBlock)failedBlock;
+
+
+/**
+ *  获取微信用户基本信息
+ *  get
+ *
+ *  @param completionBlock
+ *  @param failedBlock
+ */
+- (void)requestWechatUnionid:(NSDictionary *)dict
+             completionBlock:(AccountDAOBlock)completionBlock
+              setFailedBlock:(AccountDAOBlock)failedBlock;
+
+/**
+ *  用户提交一条建议
+ *
+ *  @param dict
+ *  @param completionBlock
+ *  @param failedBlock
+ */
+- (void)requestSuggestCreate:(NSDictionary *)dict
+             completionBlock:(AccountDAOBlock)completionBlock
+              setFailedBlock:(AccountDAOBlock)failedBlock;
+
+
+@end

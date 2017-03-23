@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Commenters" representedClassName="CommentModel" syncable="YES">
+        <attribute name="commentedUserId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentedUserNickname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentUserId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentUserNickname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentUserPortraitUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="m_Id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="parentCommentId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="dyInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Dynamic" inverseName="commenters" inverseEntity="Dynamic" syncable="YES"/>
+    </entity>
+    <entity name="Dynamic" representedClassName="DynamicMode" syncable="YES">
+        <attribute name="addressId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="createTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasFollowTheAuthor" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasPraiseTheImg" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imgCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgHeight" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="imgId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgWidth" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="m_Id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nickname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="portraitUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="praiseCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="snsPlatform" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="commenters" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Commenters" inverseName="dyInfo" inverseEntity="Commenters" syncable="YES"/>
+        <relationship name="praisers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Praise" inverseName="dyInfo" inverseEntity="Praise" syncable="YES"/>
+        <relationship name="shopInfo" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ShopModel" inverseName="dyInfo" inverseEntity="ShopModel" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Tags" inverseName="dyInfo" inverseEntity="Tags" syncable="YES"/>
+    </entity>
+    <entity name="Praise" representedClassName="PraiseModel" syncable="YES">
+        <attribute name="createTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasFollowTheAuthor" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="imgId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nickName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="portraitUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="praiseId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="dyInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Dynamic" inverseName="praisers" inverseEntity="Dynamic" syncable="YES"/>
+    </entity>
+    <entity name="ShopModel" representedClassName="ShopModel" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addressName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="avgPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="branchName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="dyInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Dynamic" inverseName="shopInfo" inverseEntity="Dynamic" syncable="YES"/>
+    </entity>
+    <entity name="Tags" representedClassName="TipModel" syncable="YES">
+        <attribute name="branchName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="directionFlag" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imgId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="tag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tagId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tagType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="x" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="y" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="dyInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Dynamic" inverseName="tags" inverseEntity="Dynamic" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Commenters" positionX="-200" positionY="261" width="128" height="223"/>
+        <element name="Dynamic" positionX="18" positionY="189" width="128" height="450"/>
+        <element name="Praise" positionX="-236" positionY="675" width="128" height="178"/>
+        <element name="ShopModel" positionX="351" positionY="701" width="128" height="163"/>
+        <element name="Tags" positionX="288" positionY="189" width="128" height="208"/>
+    </elements>
+</model>

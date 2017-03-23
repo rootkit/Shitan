@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell multipleTouchEnabled="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="434" id="6fS-1q-Ilr" customClass="TipsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="434"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6fS-1q-Ilr" id="6BF-6L-KsB">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="441"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9LG-1x-SsH">
+                        <rect key="frame" x="0.0" y="11" width="320" height="423"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10分钟前" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mi4-nT-aYM">
+                                <rect key="frame" x="60" y="34" width="114" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3k3-8U-X6I">
+                                <rect key="frame" x="257" y="18" width="50" height="23"/>
+                                <state key="normal" image="btn_dynamic_follow.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" 关注">
+                                            <attributes>
+                                                <color key="NSColor" red="0.87843137250000003" green="0.22352941179999999" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="focusButtonTapped:" destination="6fS-1q-Ilr" eventType="touchUpInside" id="Mnx-9j-51u"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pt5-zj-te1">
+                                <rect key="frame" x="0.0" y="60" width="320" height="320"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="9uI-QQ-4Kz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrL-6s-2Uh">
+                                <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AFY-ZX-lqC"/>
+                                    <constraint firstAttribute="width" constant="40" id="vss-qt-qoL"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="head_default.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="headButtonTapped:" destination="6fS-1q-Ilr" eventType="touchUpInside" id="nds-2K-Orf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Richard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sh2-5G-Cta">
+                                <rect key="frame" x="60" y="11" width="189" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3tu-y1-Ck2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pt5-zj-te1" firstAttribute="top" secondItem="9LG-1x-SsH" secondAttribute="top" constant="60" id="0bY-ME-xgn"/>
+                            <constraint firstAttribute="width" constant="320" id="1fy-BN-G52"/>
+                            <constraint firstItem="sh2-5G-Cta" firstAttribute="top" secondItem="9LG-1x-SsH" secondAttribute="top" constant="11" id="39w-jH-uep"/>
+                            <constraint firstAttribute="height" constant="423" id="7qc-hF-2DZ"/>
+                            <constraint firstAttribute="trailing" secondItem="sh2-5G-Cta" secondAttribute="trailing" constant="71" id="9IV-lB-Xb9"/>
+                            <constraint firstItem="TrL-6s-2Uh" firstAttribute="top" secondItem="9LG-1x-SsH" secondAttribute="top" constant="10" id="BcX-xO-R5W"/>
+                            <constraint firstItem="TrL-6s-2Uh" firstAttribute="leading" secondItem="9LG-1x-SsH" secondAttribute="leading" constant="10" id="C7P-6i-GXo"/>
+                            <constraint firstAttribute="width" secondItem="Pt5-zj-te1" secondAttribute="width" id="CMy-9I-VFD"/>
+                            <constraint firstAttribute="trailing" secondItem="Pt5-zj-te1" secondAttribute="trailing" id="QPL-O8-Sav"/>
+                            <constraint firstItem="TrL-6s-2Uh" firstAttribute="leading" secondItem="Pt5-zj-te1" secondAttribute="leading" constant="10" id="dAm-mS-OLc"/>
+                            <constraint firstItem="Pt5-zj-te1" firstAttribute="leading" secondItem="9LG-1x-SsH" secondAttribute="leading" id="hJy-PU-j8u"/>
+                            <constraint firstItem="sh2-5G-Cta" firstAttribute="leading" secondItem="9LG-1x-SsH" secondAttribute="leading" constant="60" id="mYA-8e-KKG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="9LG-1x-SsH" secondAttribute="trailing" constant="-8" id="N9V-4o-7PK"/>
+                    <constraint firstItem="9LG-1x-SsH" firstAttribute="leading" secondItem="6BF-6L-KsB" secondAttribute="leadingMargin" constant="-8" id="w5i-Nn-RAs"/>
+                    <constraint firstItem="9LG-1x-SsH" firstAttribute="top" secondItem="6BF-6L-KsB" secondAttribute="topMargin" constant="3" id="yOQ-HF-V6u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgroundView" destination="9LG-1x-SsH" id="NO5-z8-Jya"/>
+                <outlet property="focusButton" destination="3k3-8U-X6I" id="rW1-sl-X9A"/>
+                <outlet property="headV" destination="TrL-6s-2Uh" id="eke-Un-HfE"/>
+                <outlet property="nameLabel" destination="sh2-5G-Cta" id="pPz-bf-1pR"/>
+                <outlet property="picHight" destination="9uI-QQ-4Kz" id="3wW-QY-SMI"/>
+                <outlet property="picImageV" destination="Pt5-zj-te1" id="fQH-Wj-all"/>
+                <outlet property="timeLabel" destination="mi4-nT-aYM" id="5uH-yR-y1X"/>
+                <outlet property="viewHight" destination="7qc-hF-2DZ" id="PbZ-ap-ret"/>
+                <outlet property="viewWidth" destination="1fy-BN-G52" id="L2f-Oo-LbI"/>
+            </connections>
+            <point key="canvasLocation" x="505" y="352"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_dynamic_follow.png" width="14" height="14"/>
+        <image name="head_default.png" width="40" height="40"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
